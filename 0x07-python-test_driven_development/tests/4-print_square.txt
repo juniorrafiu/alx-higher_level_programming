@@ -1,0 +1,45 @@
+4-print_square.txt
+---------------------------
+how to use 4-print_square.py
+---------------------------
+module defines an integer addition function ''print_square(matrix,div)''
+
+usage
+-----
+prints a square of length size
+size should be an integer else a TypeError is raised
+size must be >= 0 else ValueError is raised
+
+::
+    >>> print_square = __import__('_print_square').print_square
+    >>> print_square(1)                                        
+    #
+    >>> print_square(4) 
+    ####
+    ####
+    ####
+    ####
+    >>> print_square(10) 
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    >>> print_square(0)
+    >>> print_square(None) 
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+    >>> print_square(5.5)  
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+    >>> print_square("not")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+    >>> print_square(-5)    
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
